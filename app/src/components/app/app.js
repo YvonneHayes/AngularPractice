@@ -1,11 +1,15 @@
 import template from './app.html';
-import styles from './app.scss';
+import style from './app.scss';
 
 export default {
   template,
-  controllerAs: 'app',
+  // controllerAs: 'app',
   controller() {
-    this.styles = styles;
-
-  }
+    this.style = style;
+    this.pets = [
+      {name: 'Kobi'},
+      {name: 'BuckWheat'},
+      {name: 'Mr.Ted'},
+    ];
+  },
 };
