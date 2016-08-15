@@ -15,6 +15,11 @@
       {{pet.name}}
     </li>
   </ul>
+  <br>
+  <h2>Did something change by any chance?</h2>
+  <p>How often did you click and unclick this little checkbox? Let's count!</p>
+  <input type="checkbox" ng-model="countIt" ng-change="count=count + 1" />
+                 Count: {{count}}
 
 
 </main>
