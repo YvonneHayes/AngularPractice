@@ -8,13 +8,13 @@ export default function configRoutes($stateProvider, $urlRouterProvider) {
       views: {
         main: { component: 'home' },
       },
+    })
+    .state('about', {
+      url: '/about',
+      views: {
+        main: { component: 'about' },
+      },
     });
-    // .state('about', {
-    //   url: '/about',
-    //   views: {
-    //     main: { component: 'about' },
-    //   },
-    // });
 
   $urlRouterProvider.otherwise('/');
 
